@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tabs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main-section{
+            width: 50%;
+            border-radius: 10px;
+            margin: 100px auto;
+            padding: 10px 30px 60px;
+            box-shadow: 0 8px 14px rgba(0,0,0 0.2);
+            border: 2px solid black;
+        }
+        input,
+        section{
+            clear: both;
+            display: none;
+            padding-top:10px;
+        }
+
+        label{
+            cursor: pointer;
+            font-size: 14px;
+            display: block;
+            float: left;
+            padding: 10px 30px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-bottom: 2px solid #ddd;
+        }
+
+        #home-tab:checked~#home-content,
+        #html-tab:checked~#html-content,
+        #css-tab:checked~#css-content,
+        #javascript-tab:checked~#javascript-content{
+            display: block;
+        }
+        input:checked+label{
+            font-weight: bold;
+            border-top-color: #ffb03d;
+            border-right-color: #d5caca;
+            border-left-color: #d5caca;
+            border-bottom-color: transparent;
+        }
+
+        h2{
+            margin-bottom: 1rem;
+        }
+
+        h3{
+            color: #e65b00;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            color: #e65b00;
+            font: 14px ;
+            line-height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <h2>CSS Tabs</h2>
+        <input id="home-tab" type="radio" name="tabs" checked>
+        <label for="home-tab">Home</label>
+        <input id="html-tab" type="radio" name="tabs" >
+        <label for="html-tab">HTML</label>
+        <input id="css-tab" type="radio" name="tabs" >
+        <label for="css-tab">CSS</label>
+        <input id="javascript-tab" type="radio" name="tabs" >
+        <label for="javascript-tab">JavaScript</label>
+
+        <section id="home-content">
+            <h3>Geek Help</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis asperiores quae, ipsum magni, dolor aperiam corporis saepe vel nulla dolore suscipit dicta eius delectus tempora? At corrupti eius excepturi consequuntur!</p>
+        </section>
+        <section id="html-content">
+            <h3>HTML</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis asperiores quae, ipsum magni, dolor aperiam corporis saepe vel nulla dolore suscipit dicta eius delectus tempora? At corrupti eius excepturi consequuntur!</p>
+        </section>
+        <section id="css-content">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis asperiores quae, ipsum magni, dolor aperiam corporis saepe vel nulla dolore suscipit dicta eius delectus tempora? At corrupti eius excepturi consequuntur!</p>
+        </section>
+        <section id="javascript-content">
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis asperiores quae, ipsum magni, dolor aperiam corporis saepe vel nulla dolore suscipit dicta eius delectus tempora? At corrupti eius excepturi consequuntur!</p>
+        </section>
+    </div>
+</body>
+</html>

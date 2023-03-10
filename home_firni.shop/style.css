@@ -1,0 +1,93 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #111827;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.container {
+    overflow: hidden;
+    /* width: 85%; */
+}
+
+.left{
+    float: left;
+}
+.Right{
+    float: right;
+}
+.filterDiv {
+    margin: 5px ;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+#myBtnContainer{
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+   color: #f1f1f1;
+   background: none;
+    cursor: pointer;
+}
+
+
+.btn.active {
+    color: white;
+}
+
+.card {
+    border-radius: 10px;
+    height: 25rem;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.card svg {
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.description {
+    padding: 15px;
+    background: white;
+    color: black;
+}
+
+.title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.description p {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #94a3b8;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+  <html lang="en">
+  
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Filter Cards using JavaScript - @codingtorque</title>
+  
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+      <style>
+        
+      </style>
+</head>
+  
+<body>
+          <!-- further code in next block -->
+  
+          <script src="script.js">
+            
+          </script>
+ <header>         <!-- Control buttons -->
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('suv')"> SUV</button>
+    <button class="btn" onclick="filterSelection('sedan')"> Sedan</button>
+    <button class="btn" onclick="filterSelection('hatchback')"> Hatchback</button>
+    <button class="btn" onclick="filterSelection('sofa')"> sofa</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+    <div class="filterDiv suv left">
+        <div class="card">
+            <img src="blog-1.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Meridian</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv hatchback Right">
+        <div class="card">
+            <img src="blog-2.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Nexon</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv sedan left">
+        <div class="card">
+            <img src="blog-3.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Swift</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv suv Right">
+        <div class="card">
+            <img src="blog-4.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Scorpio</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv suv left">
+        <div class="card">
+            <img src="blog-5.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Fortuner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="filterDiv sofa Right">
+        <div class="card">
+            <img src="blog-6.jpg" alt="Article">
+            <div class="description">
+                <h4 class="title">Fortuner</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatibus eos. Quae,
+                    dolores
+                    commodi? Impedit commodi voluptates</p>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+</body>
+  
+</html>
